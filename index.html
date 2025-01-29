@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS\styles.css">
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    
+    <header>
+        <h1>Kalkulator BMI</h1>
+    </header>
+
+    <main>
+        <!-- Form Section -->
+        <section>
+            <form id="bmi-form">
+                <div class="form-group">
+                    <label for="weight">Berat Badan (kg)</label>
+                    <input type="number" id="weight" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="height">Tinggi Badan (cm)</label>
+                    <input type="number" id="height" required>
+                </div>
+
+                <button type="submit">Hitung BMI</button>
+                <button type="reset" class="reset-btn">Reset</button>
+            </form>
+        </section>
+
+        <!-- Result Section -->
+        <section>
+            <div class="result-section" id="result-section">
+                <header>
+                    <h2>Hasil BMI</h2>
+                </header>
+                <div>
+                    <span id="result-bmi">0</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span>Made by AdrainsyahR@2025</span>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
